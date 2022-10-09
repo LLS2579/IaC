@@ -1,0 +1,17 @@
+After opening a command line I entered:
+
+#sudo dnf install httpd
+
+This installed the Apache Webserver shell.
+I then set the shell to enabled and to start on boot:
+
+#systemctl enable httpd
+#systemctl start httpd
+
+Within the httpd root folder initiated an html file and altered it in nano:
+
+#sudo nano /var/www/html/index.html
+
+Altered permissions for index.html to 755
+
+#sudo chmod 755 index.html
